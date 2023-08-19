@@ -1,0 +1,9 @@
+^Meta$
+^doc$
+^\.travis\.yml$
+^LICENSE\.md$
+^.*\.Rproj$
+^\.Rproj\.user$
+^codecov\.yml$
+^appveyor\.yml$
+^cran-comments\.md$
