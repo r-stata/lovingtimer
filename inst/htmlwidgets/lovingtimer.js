@@ -1,6 +1,6 @@
 HTMLWidgets.widget({
 
-    name: 'hwordcloud',
+    name: 'lovingtimer',
 
     type: 'output',
 
