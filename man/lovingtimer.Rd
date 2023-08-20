@@ -8,6 +8,7 @@
 lovingtimer(
   title = "From the first day to the future",
   firstday = "2023-01-01 01:00:00",
+  bgcolor = "#8dd3c7!important",
   titlefontfamily = "Source Han Serif",
   timerfontfamily = "Source Han Serif !important",
   spanfontfamily = "Helvetica,Arial,sans-serif",
@@ -19,6 +20,8 @@ lovingtimer(
 \item{title}{Title.}
 
 \item{firstday}{The first day of love. For example, "2023-01-01 01:00:00".}
+
+\item{bgcolor}{background-color.}
 
 \item{titlefontfamily}{Title font family.}
 

@@ -5,6 +5,7 @@
 #'
 #' @param title Title.
 #' @param firstday The first day of love. For example, "2023-01-01 01:00:00".
+#' @param bgcolor background-color.
 #' @param titlefontfamily Title font family.
 #' @param timerfontfamily Timer font family.
 #' @param spanfontfamily Font for numbers.
@@ -20,6 +21,7 @@
 lovingtimer <- function(
   title = "From the first day to the future",
   firstday = "2023-01-01 01:00:00",
+  bgcolor = "#8dd3c7!important",
   titlefontfamily = "Source Han Serif",
   timerfontfamily = "Source Han Serif !important",
   spanfontfamily = "Helvetica,Arial,sans-serif",
@@ -55,7 +57,7 @@ lovingtimer <- function(
                      varArgs = '$("#DateCountdown").TimeCircles();')
     ),
     htmltools::tag("style", paste0(
-      "body{-webkit-font-smoothing:antialiased;font-family:Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;background-color:#8dd3c7;}.container{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);font-size:14px;line-height:1.428571429;color:#333;-webkit-font-smoothing:antialiased;font-family:Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;box-sizing:border-box;padding-right:15px;padding-left:15px;margin-right:auto;max-width:970px;width:800px;height:340px;position:absolute;left:50%;top:50%;margin-left:-400px;margin-top:-170px;}h2{text-align:center;font-family:", titlefontfamily, "}h4{text-align:center;font-family:", timerfontfamily, "}span{text-align:center;font-family:", spanfontfamily, "}"
+      "body{-webkit-font-smoothing:antialiased;font-family:Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;background-color:", bgcolor, ";}.container{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);font-size:14px;line-height:1.428571429;color:#333;-webkit-font-smoothing:antialiased;font-family:Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;box-sizing:border-box;padding-right:15px;padding-left:15px;margin-right:auto;max-width:970px;width:800px;height:340px;position:absolute;left:50%;top:50%;margin-left:-400px;margin-top:-170px;}h2{text-align:center;font-family:", titlefontfamily, "}h4{text-align:center;font-family:", timerfontfamily, "}span{text-align:center;font-family:", spanfontfamily, "}"
     ))
     )
 }
